@@ -1,15 +1,59 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 15px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
 }
 
-.formContainer {
-  display: flex;
-  flex-direction: column;
-  background-color: red;
-}
-
-.h3 {
+.formHeading {
+  color: #444444;
   font-family: "Martel Sans", sans-serif;
   font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.label {
+  margin-bottom: 24px;
+  font-family: "Palanquin", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+
+  &:last-of-type {
+    margin-bottom: 36px;
+  }
+
+  span {
+    display: block;
+    margin-top: 8px;
+  }
+}
+
+.input {
+  height: 40px;
+}
+
+.textarea {
+  height: 146px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #555555;
+  font-family: "Palanquin", sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+
+  &:focus {
+    border-bottom: 1px solid #d43a2c;
+    box-shadow: 0 1px 0 0 #d43a2c;
+  }
 }

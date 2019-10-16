@@ -1,0 +1,45 @@
+.intro {
+  background-color: #fffefa;
+}
+
+.container {
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.row:first-child {
+  margin-bottom: 100px;
+}
+
+.mapContainer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.mapContainer img {
+  width: 350px;
+  // display: block;
+  height: auto;
+}
+
+.textContainer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.textContainer p {
+  font-weight: 300;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 21px;
+  line-height: 32px;
+}
+
+.textContainer p:nth-child(2) {
+  margin-top: 20px;
+}

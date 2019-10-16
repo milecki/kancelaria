@@ -1,0 +1,35 @@
+.areas {
+  background-color: #fffefa;
+}
+
+.container {
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center
+}
+
+.area {
+  width: 33.3333%;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 30px;
+
+}
+
+.areaName {
+  font-size: 19px;
+  line-height: 21px;
+  font-weight: 700;
+  margin-top: 2px;
+  margin-bottom: 15px;
+  font-family: 'Palanquin', sans-serif;
+  color: #444444;
+  padding: 0;
+}

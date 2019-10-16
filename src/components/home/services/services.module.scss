@@ -1,0 +1,46 @@
+.services {
+  background-color: #f9f5ea;
+  text-align: center;
+}
+
+.container {
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.row:first-of-type {
+  margin-bottom: 100px;
+}
+
+.service {
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.serviceName {
+  text-transform: uppercase;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 19px;
+  color: #444;
+}
+
+.serviceDesc {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 300;
+  font-weight: 300;
+  font-family: 'Palanquin', sans-serif;
+  color: #444;
+}

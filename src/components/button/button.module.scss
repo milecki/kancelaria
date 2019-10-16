@@ -1,0 +1,102 @@
+$base-color: #d43a2c;
+
+.btn {
+  display: block;
+  // position: relative;
+  margin: 0 auto;
+  font-family: 'Martel Sans', sans-serif;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1.3px;
+  // outline: none;
+  font-weight: 800;
+  transition: all .3s ease;
+
+  svg {
+    vertical-align: middle;
+  }
+}
+
+.btnPrimary {
+  width: 154px;
+  border: 3px solid #d43a2c;
+  color: #d43a2c;
+  line-height: 20px;
+  padding: 1px 0px;
+  // margin: 15px 0px 30px 0px;
+  font-size: 8px;
+
+  &:hover,
+  &:focus {
+    background-color: #d43a2c;
+    color: #ffffff;
+  }
+
+  svg {
+    font-size: 7px;
+  }
+}
+
+.btnCta {
+  width: 154px;
+  border: 3px solid #FFF;
+  color: #FFF;
+  font-size: 15px;
+  line-height: 40px;
+
+  &:hover,
+  &:focus {
+    background-color: #d43a2c;
+    border-color: #d43a2c;
+  }
+
+  svg {
+    font-size: 13px;
+  }
+}
+
+.btnNoBorder {
+  position: relative;
+  display: inline-block;
+  color: #d43a2c;
+  line-height: 20px;
+  font-size: 12px;
+
+  // transition: color 0.3s;
+
+
+  // &::before {
+  //   position: absolute;
+  //   top: 10%;
+  //   left: 115%;
+  //   color: transparent;
+  //   content: '•';
+  //   text-shadow: 0 0 transparent;
+  //   font-size: 1em;
+  //   -webkit-transition: text-shadow 0.3s, color 0.3s;
+  //   -moz-transition: text-shadow 0.3s, color 0.3s;
+  //   transition: text-shadow 0.3s, color 0.3s;
+  //   -webkit-transform: translateX(-50%);
+  //   -moz-transform: translateX(-50%);
+  //   transform: translateX(-50%);
+  //   pointer-events: none;
+  // }
+
+  // &:hover::before,
+  // &:focus::before {
+  //   color: #d43a2c;
+  //   text-shadow: 10px 0 #d43a2c, -10px 0 #d43a2c;
+  // }
+
+  &:hover,
+  &:focus {
+    color: hsl(5, 66%, 70%);
+  }
+
+  svg {
+    font-size: 11px;
+    position: relative;
+  }
+}

@@ -1,21 +1,30 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
+import Hero from "../components/hero/hero"
+import Intro from "../components/home/intro/intro"
+import Services from "../components/home/services/services"
+import Areas from "../components/home/areas/areas"
+import CTA from "../components/home/cta/cta"
+import Team from "../components/home/team/team"
+
+import bgImage from "../images/bg-main.jpg"
+
+// import Img from "gatsby-image"
+
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+    <Hero src={bgImage}>
+      Prof. Szydło i Współpracownicy
+      <span>- prawo na najwyższym poziomie -</span>
+    </Hero>
+    <Intro />
+    <Services />
+    <Areas />
+    <CTA />
+    <Team />
+  </>
 )
 
 export default IndexPage

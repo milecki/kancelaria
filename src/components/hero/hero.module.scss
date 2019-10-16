@@ -1,0 +1,30 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: "#3d201a";
+
+  h1 {
+    color: #FFF;
+    // font-family: 'Playfair Display', serif;
+    // font-size: 34px;
+    line-height: 1.3;
+
+    // line-height: 1.1;
+    text-align: center;
+
+    font-family: 'Martel Sans', serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  span {
+    display: block;
+  }
+}

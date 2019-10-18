@@ -1,0 +1,31 @@
+.menuTogglerIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 53px;
+  cursor: pointer;
+
+
+  &:hover div {
+    background-color: darkgrey;
+  }
+
+  div {
+    transition: background-color .2s ease-in-out;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.bar {
+  width: 22px;
+  height: 2px;
+  margin-bottom: 4px;
+  background-color: #444444;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

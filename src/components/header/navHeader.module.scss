@@ -1,0 +1,14 @@
+.navHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 30px;
+  content: url("../../images/logo-kancelaria-szydlo-small.png");
+
+  @media screen and (min-width: 425px) {
+    content: url("../../images/logo-kancelaria-szydlo.png");
+  }
+}

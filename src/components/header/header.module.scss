@@ -1,5 +1,12 @@
 .header {
-  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  min-height: 53px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 0.7px 3px 0px rgba(0, 0, 0, 0.75);
+  z-index: 3;
 }
 
 .headerContainer {
@@ -7,9 +14,17 @@
   max-width: 1170px;
   padding-right: 15px;
   padding-left: 15px;
-  height: 60px;
+}
+
+.nav {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .linkImg {
@@ -17,13 +32,4 @@
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
-  outline: none,
-}
-
-.nav a {
-  color: #444;
-  text-decoration: none;
-  line-height: 60px;
-  font-size: 12px;
-  font-family: "Martel Sans", sans-serif;
 }

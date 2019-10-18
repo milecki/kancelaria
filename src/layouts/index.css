@@ -386,6 +386,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  margin-top: 53px;
+}
+
 *,
 *:before,
 *:after {

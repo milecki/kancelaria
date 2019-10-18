@@ -1,0 +1,49 @@
+.linkList {
+  list-style-type: none;
+  transition: height 0.2s ease-in-out;
+  overflow: hidden;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: #444;
+    padding: 15px 15px 15px 0;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    transition: color .2s ease-in-out;
+
+
+    &:hover {
+      color: darkgrey;
+    }
+
+    @media screen and (min-width: 1024px) {
+      padding: 20px 15px;
+    }
+  }
+}
+
+.closed {
+  height: 0;
+
+  @media screen and (min-width: 1024px) {
+    height: initial;
+  }
+}
+
+.open {
+  height: 268px;
+
+  @media screen and (min-width: 1024px) {
+    height: initial;
+  }
+}

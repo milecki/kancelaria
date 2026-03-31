@@ -1,4 +1,5 @@
 module.exports = {
+  trailingSlash: `never`,
   siteMetadata: {
     title: `Kancelaria prawna Prof. Szydło i Współpracownicy`,
     description: `Usługi prawne i doradcze, specjalistyczne analizy i opinie prawne na najwyższym merytorycznym poziomie we wszystkich dziedzinach prawa prywatnego i publicznego.`,
@@ -14,9 +15,20 @@ module.exports = {
       },
     },
     `gatsby-plugin-layout`,
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        cssLoaderOptions: {
+          esModule: false,
+          modules: {
+            namedExport: false,
+          },
+        },
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
